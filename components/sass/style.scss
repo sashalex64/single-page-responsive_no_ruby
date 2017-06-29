@@ -1,16 +1,41 @@
 // style.scss
 // ==============
- 
-//Compass imports
-@import "compass";
-@import "compass/reset";
-@import "compass/css3/box-shadow";
-@import "compass/css3/text-shadow";
-@import 'compass/css3/filter';
-@import "compass/css3/flexbox";
-@import "compass/css3/transition";
+
+// Eric Meyer reset in scss
+
+@import "reset";
+
+
+//Compass imports: // seem to be obsolete, haven't use any of them
+// @import "compass";
+// @import "compass/reset";
+// @import "compass/css3/box-shadow";
+// @import "compass/css3/text-shadow";
+// @import 'compass/css3/filter';
+// @import "compass/css3/flexbox";
+// @import "compass/css3/transition";
 
 //External Libraries
 @import "susy";
 @import "breakpoint";
+
+
+// Core Partials 
+@import "headings";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+
+//Import Modules
+@import "modules/attractions";
+@import "modules/dining";
+@import "modules/events";
+@import "modules/hotelinfo";
+@import "modules/intro";
+@import "modules/nav";
+@import "modules/rooms";
+@import "modules/welcome";
+@import "modules/footer";
 

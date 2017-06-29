@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-htmlmin'),
     concat = require('gulp-concat'),
     wait = require('gulp-wait'),
+    sourcemaps = require('gulp-sourcemaps'),
     path = require('path');
     
 //   setting variables for later defining & use:
@@ -53,12 +54,14 @@ gulp.task('js', function() {
 gulp.task('sass', function() {
   return gulp.src(sassSources)
       // .pipe(wait(100))
+      .pipe(sourcemaps.init())
       .pipe(sass({
           outputStyle: 'expanded',
           includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets', 'node_modules/compass-mixins/lib']
-          //succesfully included susy, breakpoint-sass and normalize
+          //succesfully included susy, breakpoint-sass, compass-mixins and normalize
       }).on('error', sass.logError))
-      // .pipe(autoprefixer())
+      .pipe(autoprefixer())
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest(outputDir + 'css'))
       .pipe(connect.reload());
 });

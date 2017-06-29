@@ -1,0 +1,21 @@
+#attractions {
+	@inslude clearfix;
+	@include container(100%);
+	padding: 0;
+	@include backImage('../images/hotel/attractions.jpg');
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	
+	article {
+		@include container(80%);
+		@include breakpoint($medium) {
+			@include container(50%);
+		} //breakpoint medium
+		padding: 20px;
+		// margin-top: 200px;
+		// margin-bottom: 200px;
+		background:rgba($light, .8);
+		border-radius: 10px;
+	} //article
+}

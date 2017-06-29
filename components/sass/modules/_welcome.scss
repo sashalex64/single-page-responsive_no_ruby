@@ -1,0 +1,39 @@
+#welcome {
+	background-image: linear-gradient(to bottom, $yellow, $orange);
+
+	article {
+		text-align: center;
+		@include container(70%);
+		@include breakpoint($small) {
+			@include container(33em);
+			padding: 60px 0;
+		}
+	}
+	h1 {
+		font-weight: normal;
+		line-height: 100%;
+		color: darken($orange, 20);
+		padding: 10px 0;
+	} //h1
+	.gallery {
+		@include clearfix;
+		img {
+			border-radius: 20%;
+			display: none;
+
+			@include breakpoint($small) {
+				@include gallery(1 of 4);
+				display: inline;
+				&.hidesm {
+					display: none;
+				}
+			}  //breakpoint
+			@include breakpoint($medium) {
+				@include gallery(1 of 5);
+				&.hidesm {
+					display: inline;
+				}
+			}  //breakpoint
+		}
+	}  // gallery
+} //#welcome
