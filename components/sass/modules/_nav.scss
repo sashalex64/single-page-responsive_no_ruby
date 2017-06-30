@@ -6,6 +6,8 @@ header #nav {
 
 	.navbar {
 		@include container;
+		box-shadow: 0 2px 2px $dark;
+		//senka ispod navbara
 		.brand {
 			@include span(4);
 			float: left;
