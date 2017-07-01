@@ -81,6 +81,10 @@ header #nav {
 							display: none;
 						}
 					} // breakpoint
+					&.active {
+						background-color: $red;
+						color: $light;
+					}
 					@include breakpoint($small $medium) {
 						padding-left: 10px;
 						&.icon {

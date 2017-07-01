@@ -592,6 +592,11 @@ header #nav .navbar ul li a:hover {
   }
 }
 
+header #nav .navbar ul li a.active {
+  background-color: #df4545;
+  color: #ffffff;
+}
+
 @media (min-width: 650px) and (max-width: 960px) {
   header #nav .navbar ul li a {
     padding-left: 10px;

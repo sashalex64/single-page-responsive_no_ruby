@@ -57,7 +57,7 @@ gulp.task('sass', function() {
       .pipe(sourcemaps.init())
       .pipe(sass({
           outputStyle: 'expanded',
-          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets', 'node_modules/compass-mixins/lib']
+          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets'/*, 'node_modules/compass-mixins/lib'*/]
           //succesfully included susy, breakpoint-sass, compass-mixins and normalize
       }).on('error', sass.logError))
       .pipe(autoprefixer())

@@ -1,7 +1,7 @@
 {
   "name": "single_page_responsive_no_ruby",
   "version": "1.0.0",
-  "description": "single page design website with sass, compass, susy and breakpoint",
+  "description": "single page design website with sass, susy, breakpoint and jquery",
   "repository": {
     "type": "git",
     "url": "?.git"
@@ -9,7 +9,6 @@
   "keywords": [
     "NPM",
     "Sass",
-    "Compass",
     "Susy 2",
     "Breakpoint"
   ],
@@ -17,7 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
-    "compass-mixins": "^0.12.10",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-browserify": "^0.5.1",
