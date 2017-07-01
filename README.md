@@ -1,2 +1,2 @@
 # Responsive Single Page Design Tutorial
-Same tutorial project but using Sass, Susy, jquery. No Ruby, no Compass.
+Same tutorial project but using libsass instead of ruby. No Compass as well.
