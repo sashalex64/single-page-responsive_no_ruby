@@ -1,6 +1,6 @@
 $(function(){
 
-	var topoffset = 43;
+	var topoffset = 44;
 	var wheight = $(window).height(); //get window height
 
 	$('.fullheight').css('height', wheight);
@@ -75,6 +75,7 @@ $(function(){
 	}).setPin('#nav').addTo(controller);
 
 	//========================
+	
 	// attractions tween
 	var attractionstween = TweenMax.staggerFromTo('#attractions article', 
 		1, {

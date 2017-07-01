@@ -121,6 +121,7 @@ body {
 }
 
 #attractions {
+  z-index: 0;
   @inslude clearfix;
   max-width: 100%;
   margin-left: auto;

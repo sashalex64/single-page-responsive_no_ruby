@@ -1,4 +1,5 @@
 #attractions {
+	z-index: 0;
 	@inslude clearfix;
 	@include container(100%);
 	padding: 0;
